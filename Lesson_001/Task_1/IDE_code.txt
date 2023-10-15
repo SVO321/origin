@@ -1,0 +1,135 @@
+#include <iostream>
+#include <windows.h>
+
+int fibanachi(int size) {
+    long long arr[size];
+    std::cout << "Числа Фибоначчи: ";
+    if (size == 0) {
+        arr[0] = 0;
+        std::cout << arr[0] << " ";
+    } else if (size == 1) {
+        arr[0] = 0;
+        arr[1] = 1;
+        std::cout << arr[0] << " " << arr[1] << " ";
+    } else {
+        for (int i = 0; i <= 1; i++)
+        {
+            arr[i] = i;
+            std::cout << arr[i] << " ";
+        }
+        for (int i = 2; i < size; i++)
+        {
+            arr[i] = arr[i-2] + arr[i-1];
+            std::cout << arr[i] << " ";
+        }
+    }
+    return size;
+}
+int main(int argc, char **argv) {
+    SetConsoleCP(1251); SetConsoleOutputCP(1251);
+    int size;
+    std::cout << "Введите целое число: ";
+    std::cin >> size;
+    fibanachi(size);
+    return 0;
+}
+
+
+// IDE_VS2022.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <windows.h>
+#include <fstream>
+
+void open_error(char file_name[])
+{
+    std::cout << "I can't open the file - " << file_name << std::endl;
+}
+
+int* create_array(int size)
+{
+    return new int[size];
+}
+
+void delete_array(int* array)
+{
+    delete[] array;
+}
+
+void type(std::ofstream* fout, int size, int* array)
+{
+    *fout << size << std::endl;
+    //*fout << i << " " << j << std::endl;
+    for (int i = 0; i < size; i++)
+    {
+        *fout << array[i] << " ";
+        if (i = size - 1)
+        {
+            *fout << array[i] << std::endl;
+        }
+        else
+        {
+            *fout << array[i] << " ";
+        }
+    }
+}
+
+
+int main(int argc, char** argv)
+{
+    SetConsoleCP(1251); SetConsoleOutputCP(1251);
+    setlocale(LC_ALL, "Russian");
+    std::cout << "Поехали работать программистом!\n";
+    int size, input;
+    char file_in[] = "in.txt";
+    char file_out[] = "out.txt";
+    
+    std::ifstream fin(file_in);
+    if (!fin.is_open())
+    {
+        open_error(file_in); return 0;
+    }
+    std::ofstream fout(file_out);
+    if (!fout.is_open())
+    {
+        open_error(file_out); return 0;
+    }
+
+    fin >> size;
+    int* array_one = create_array(size);
+    for (int i = 0; i < size; i++)
+    {
+        fin >> input;
+        array_one[i] = input;
+    }
+    fin >> size;
+    int* array_two = create_array(size);
+    for (int i = 0; i < size; i++)
+    {
+        fin >> input;
+        array_two[i] = input;
+    }
+    size = sizeof(*array_two) / sizeof(int);
+    type(&fout, size, array_two);
+    
+    size = sizeof(*array_one) / sizeof(int);
+    type(&fout, size, array_one);
+    
+    
+    fin.close();
+    fout.close();
+    delete_array(array_one);
+    delete_array(array_two);
+}
+
+// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
+// Debug program: F5 or Debug > Start Debugging menu
+
+// Tips for Getting Started: 
+//   1. Use the Solution Explorer window to add/manage files
+//   2. Use the Team Explorer window to connect to source control
+//   3. Use the Output window to see build output and other messages
+//   4. Use the Error List window to view errors
+//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
+//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
