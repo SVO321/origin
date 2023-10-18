@@ -50,7 +50,7 @@ int main(int argc, char** argv)
 {
     SetConsoleCP(1251); SetConsoleOutputCP(1251);
     setlocale(LC_ALL, "Russian");
-    std::cout << "РќР°С‡Р°Р»Рѕ\n";
+    std::cout << "Начало\n";
     int size_one, size_two, input;
     char file_in[] = "in.txt";
     char file_out[] = "out.txt";
@@ -87,6 +87,6 @@ int main(int argc, char** argv)
     fout.close();
     delete[] array_one;
     delete[] array_two;
-    std::cout << "РљРѕРЅРµС†\n";
+    std::cout << "Конец\n";
     return 0;
 }
