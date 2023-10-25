@@ -12,87 +12,110 @@ void clear_console()
 
 class Calculator {
 public:
-    double num1, num2, sum, subtract12, subtract21, mult, divide12, divide21;
-    double add(double num1, double num2)
-    {
-        return sum = num1 + num2;
+    double num1, num2;
+    Calculator() {
+        num1 = 0;
+        num2 = 0;
     }
-    double subtract_1_2(double num1, double num2)
-    {
-        return subtract12 = num1 - num2;
+    Calculator(double num1, double num2) {
+        this->num1 = num1;
+        this->num2 = num2;
     }
-    double subtract_2_1(double num2, double num1)
+    double add()
     {
-        return subtract21 = num2 - num1;
+        return (num1 + num2);
     }
-    double multiply(double num1, double num2)
+    double subtract_1_2()
     {
-        return mult = num1 * num2;
+        return num1 - num2;
     }
-    double divide_1_2(double num1, double num2)
+    double subtract_2_1()
     {
-        return divide12 = num1 / num2;
+        return num2 - num1;
     }
-    double divide_2_1(double num2, double num1)
+    double multiply()
     {
-        return divide21 = num2 / num1;
+        return num1 * num2;
+    }
+    double divide_1_2()
+    {
+        return num1 / num2;
+    }
+    double divide_2_1()
+    {
+        return num2 / num1;
     }
     bool set_num1(double num1)
     {
-        this->num1 = num1;
-        return this->num1;
+        if (num1 != 0) {
+            this->num1 = num1;
+            return true;
+        }
+        else return false;
     }
     bool set_num2(double num2)
     {
-        this->num2 = num2;
-        return this->num2;
+        if (num2 != 0) {
+            this->num2 = num2;
+            return true;
+        }
+        else return false;
     }
 };
 int main(int argc, char** argv)
 {
+    setlocale(LC_ALL, "Russian");
     SetConsoleCP(1251); SetConsoleOutputCP(1251);
     double num1, num2, sum, subtract12, subtract21, mult, divide12, divide21;
     bool setnum1, setnum2, global_check, local_check;
     int input;
-    Calculator calc;
+    Calculator Calc;
     do {
         global_check = true;
-
         do {
             local_check = true;
             std::cout << "Введите num1: ";
             std::cin >> num1;
-            if (num1 == 0) {
+            setnum1 = Calc.set_num1(num1);
+            if (setnum1 == true) {
+                local_check = false;
+            }
+            if (setnum1 == false) {
                 std::cout << "Неверный ввод!" << std::endl;
             }
-            else local_check = false;
         } while (local_check);
         do {
             local_check = true;
             std::cout << "Введите num2: ";
             std::cin >> num2;
-            if (num2 == 0) {
+            setnum2 = Calc.set_num2(num2);
+            if (setnum2 == true) {
+                local_check = false;
+            }
+            if (setnum2 == false) {
                 std::cout << "Неверный ввод!" << std::endl;
             }
-            else local_check = false;
         } while (local_check);
-
-        sum = calc.add(num1, num2);
+        Calculator Calculator(num1, num2);
+        sum = Calc.add();
         std::cout << "num1 + num2 = " << sum << std::endl;
-        subtract12 = calc.subtract_1_2(num1, num2);
+
+        subtract12 = Calc.subtract_1_2();
         std::cout << "num1 - num2 = " << subtract12 << std::endl;
-        subtract21 = calc.subtract_2_1(num2, num1);
+
+        subtract21 = Calc.subtract_2_1();
         std::cout << "num2 - num1 = " << subtract21 << std::endl;
-        mult = calc.multiply(num1, num2);
+
+        mult = Calc.multiply();
         std::cout << "num1 * num2 = " << mult << std::endl;
-        divide12 = calc.divide_1_2(num1, num2);
+
+        divide12 = Calc.divide_1_2();
         std::cout << "num1 / num2 = " << divide12 << std::endl;
-        divide21 = calc.divide_2_1(num2, num1);
+
+        divide21 = Calc.divide_2_1();
         std::cout << "num2 / num1 = " << divide21 << std::endl;
-        setnum1 = calc.set_num1(num1);
-        setnum2 = calc.set_num2(num2);
         Sleep(2000);
-        std::cout << "Хотите продолжить - наберите '1', если хотите выйти - наберите '0': ";
+        std::cout << "Хотите продолжить - наберите '1', хотите выйти - наберите '0': ";
         std::cin >> input;
         if (input > 0) {
             global_check = true;
