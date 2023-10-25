@@ -1,5 +1,7 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <windows.h>
+#include <cstdlib>
+
 
 enum class months
 {
@@ -21,69 +23,71 @@ enum class months
 int main(int argc, char** argv)
 {
     SetConsoleCP(1251); SetConsoleOutputCP(1251);
+    system("chcp 1251>null");
     int input; bool checked;
     do {
         checked = false;
-        std::cout << "Ââåäèòå íîìåð ìåñÿöà: ";
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð¼ÐµÑÑÑ†Ð°: ";
         std::cin >> input;
         switch (input)
         {
         case static_cast<int>(months::January):
-            std::cout << "ßíâàðü\n";
+            std::cout << "ÃŸÃ­Ã¢Ã Ã°Ã¼\n";
             checked = true;
             break;
         case static_cast<int>(months::February):
-            std::cout << "Ôåâðàëü\n";
+            std::cout << "Ã”Ã¥Ã¢Ã°Ã Ã«Ã¼\n";
             checked = true;
             break;
         case static_cast<int>(months::March):
-            std::cout << "Ìàðò\n";
+            std::cout << "ÃŒÃ Ã°Ã²\n";
             checked = true;
             break;
         case static_cast<int>(months::April):
-            std::cout << "Àïðåëü\n";
+            std::cout << "Ã€Ã¯Ã°Ã¥Ã«Ã¼\n";
             checked = true;
             break;
         case static_cast<int>(months::May):
-            std::cout << "Ìàé\n";
+            std::cout << "ÃŒÃ Ã©\n";
             checked = true;
             break;
         case static_cast<int>(months::June):
-            std::cout << "Èþíü\n";
+            std::cout << "ÃˆÃ¾Ã­Ã¼\n";
             checked = true;
             break;
         case static_cast<int>(months::July):
-            std::cout << "Èþëü\n";
+            std::cout << "ÃˆÃ¾Ã«Ã¼\n";
             checked = true;
             break;
         case static_cast<int>(months::August):
-            std::cout << "Àâãóñò\n";
+            std::cout << "Ã€Ã¢Ã£Ã³Ã±Ã²\n";
             checked = true;
             break;
         case static_cast<int>(months::September):
-            std::cout << "Ñåíòÿáðü\n";
+            std::cout << "Ã‘Ã¥Ã­Ã²Ã¿Ã¡Ã°Ã¼\n";
             checked = true;
             break;
         case static_cast<int>(months::October):
-            std::cout << "Îêòÿáðü\n";
+            std::cout << "ÃŽÃªÃ²Ã¿Ã¡Ã°Ã¼\n";
             checked = true;
             break;
         case static_cast<int>(months::November):
-            std::cout << "Íîÿáðü\n";
+            std::cout << "ÃÃ®Ã¿Ã¡Ã°Ã¼\n";
             checked = true;
             break;
         case static_cast<int>(months::December):
-            std::cout << "Äåêàáðü\n";
+            std::cout << "Ã„Ã¥ÃªÃ Ã¡Ã°Ã¼\n";
             checked = true;
             break;
         case static_cast<int>(months::ByBy):
-            std::cout << "Äî ñâèäàíèÿ :(\n";
+            std::cout << "Ã„Ã® Ã±Ã¢Ã¨Ã¤Ã Ã­Ã¨Ã¿ :(\n";
             Sleep(2000); break;
         default:
-            std::cout << "Íåïðàâèëüíûé íîìåð!\n";
+            std::cout << "ÃÃ¥Ã¯Ã°Ã Ã¢Ã¨Ã«Ã¼Ã­Ã»Ã© Ã­Ã®Ã¬Ã¥Ã°!\n";
             checked = true;
             break;
         }
     } while (checked);
+    system("pause>null");
     return 0;
 }
