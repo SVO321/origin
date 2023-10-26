@@ -6,28 +6,31 @@ class Counter {
 private:
     int priv_input_value = 0;
 public:
-    int get_priv_input_value()
-    {
-        return priv_input_value;
+    Counter(int priv_input_value) {
+        this->priv_input_value = priv_input_value;
     }
-    void set_priv_sum(int value)
+    void sum_priv_input_value()
     {
-        priv_input_value = value;
+        priv_input_value++;
     }
-    void set_priv_subtraction(int value)
+    void subtraction_priv_input_value()
     {
-        priv_input_value = value;
+        priv_input_value--;
+    }
+    void print_priv_input_value()
+    {
+        std::cout << priv_input_value << std::endl;
     }
 };
 
 int main(int argc, char** argv)
 {
+    setlocale(LC_ALL, "Russian");
     SetConsoleCP(1251); SetConsoleOutputCP(1251);
-    int input_value, current_value;
+    int input_value;
     std::string choice_value;
     std::string choice_operation;
     bool global_check, local_check;
-    Counter count;
     global_check = true;
     std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";
     std::cin >> choice_value;
@@ -36,21 +39,19 @@ int main(int argc, char** argv)
         std::cin >> input_value;
     }
     else (input_value = 1);
+    Counter Counter(input_value);
     do {
         local_check = true;
         std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
         std::cin >> choice_operation;
         if (choice_operation == "+") {
-            input_value++;
-            count.set_priv_sum(input_value);
+            Counter.sum_priv_input_value();
         }
         if (choice_operation == "-") {
-            input_value--;
-            count.set_priv_subtraction(input_value);
+            Counter.subtraction_priv_input_value();
         }
         if (choice_operation == "=") {
-            current_value = count.get_priv_input_value();
-            std::cout << current_value << std::endl;
+            Counter.print_priv_input_value();
         }
         if (choice_operation == "x") {
             std::cout << "До свидания!" << std::endl;
@@ -58,5 +59,5 @@ int main(int argc, char** argv)
         }
     } while (local_check);
     Sleep(2000);
-    return 0;
+    return 0;
 }

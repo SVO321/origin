@@ -11,13 +11,14 @@ void clear_console()
 }
 
 class Calculator {
-public:
+private:
     double num1, num2;
+public:
     Calculator() {
-        num1 = 0;
-        num2 = 0;
+        num1 = 0, num2 = 0;
     }
-    Calculator(double num1, double num2) {
+    Calculator(double num1, double num2) 
+    {
         this->num1 = num1;
         this->num2 = num2;
     }
@@ -69,14 +70,14 @@ int main(int argc, char** argv)
     double num1, num2, sum, subtract12, subtract21, mult, divide12, divide21;
     bool setnum1, setnum2, global_check, local_check;
     int input;
-    Calculator Calc;
+    Calculator calc;
     do {
         global_check = true;
         do {
             local_check = true;
             std::cout << "¬ведите num1: ";
             std::cin >> num1;
-            setnum1 = Calc.set_num1(num1);
+            setnum1 = calc.set_num1(num1);
             if (setnum1 == true) {
                 local_check = false;
             }
@@ -88,7 +89,7 @@ int main(int argc, char** argv)
             local_check = true;
             std::cout << "¬ведите num2: ";
             std::cin >> num2;
-            setnum2 = Calc.set_num2(num2);
+            setnum2 = calc.set_num2(num2);
             if (setnum2 == true) {
                 local_check = false;
             }
@@ -97,22 +98,23 @@ int main(int argc, char** argv)
             }
         } while (local_check);
         Calculator Calculator(num1, num2);
-        sum = Calc.add();
+        sum = calc.add();
         std::cout << "num1 + num2 = " << sum << std::endl;
 
-        subtract12 = Calc.subtract_1_2();
+        subtract12 = calc.subtract_1_2();
+        subtract12 = calc.subtract_1_2();
         std::cout << "num1 - num2 = " << subtract12 << std::endl;
 
-        subtract21 = Calc.subtract_2_1();
+        subtract21 = calc.subtract_2_1();
         std::cout << "num2 - num1 = " << subtract21 << std::endl;
 
-        mult = Calc.multiply();
+        mult = calc.multiply();
         std::cout << "num1 * num2 = " << mult << std::endl;
 
-        divide12 = Calc.divide_1_2();
+        divide12 = calc.divide_1_2();
         std::cout << "num1 / num2 = " << divide12 << std::endl;
 
-        divide21 = Calc.divide_2_1();
+        divide21 = calc.divide_2_1();
         std::cout << "num2 / num1 = " << divide21 << std::endl;
         Sleep(2000);
         std::cout << "’отите продолжить - наберите '1', хотите выйти - наберите '0': ";
