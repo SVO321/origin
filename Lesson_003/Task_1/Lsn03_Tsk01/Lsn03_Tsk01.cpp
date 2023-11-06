@@ -15,7 +15,7 @@ private:
     double num1, num2;
 public:
     Calculator() {
-        num1 = 0, num2 = 0;
+        this->num1 = 1, this->num2 = 1;
     }
     Calculator(double num1, double num2) 
     {

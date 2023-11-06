@@ -38,7 +38,11 @@ int main(int argc, char** argv)
         std::cout << "¬ведите начальное значение счЄтчика: ";
         std::cin >> input_value;
     }
-    else (input_value = 1);
+    else
+    {
+        input_value = 1;
+    }
+    
     Counter Counter(input_value);
     do {
         local_check = true;
@@ -59,5 +63,5 @@ int main(int argc, char** argv)
         }
     } while (local_check);
     Sleep(2000);
-    return†0;
+    return 0;
 }
