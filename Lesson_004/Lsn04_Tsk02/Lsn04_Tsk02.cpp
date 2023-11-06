@@ -68,7 +68,7 @@ void sorting(Address* array_address, int number_of_adrs) {
     std::string city_name2;
     std::string streat_name1;
     std::string streat_name2;
-    int result; // tom.compare(person);
+    //int result;
     bool swapped;
     do {
         swapped = false;
