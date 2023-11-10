@@ -14,41 +14,32 @@ private:
     std::string city_name, streat_name;
     std::string combine_of_data;
 public:
-    void set_input_address_0(std::string city_name, std::string streat_name, int bld_number, int flat_number)
+    void set_input_address(std::string city_name, std::string streat_name, int bld_number, int flat_number)
     {
         this->city_name = city_name;
         this->streat_name = streat_name;
         this->bld_number = bld_number;
         this->flat_number = flat_number;
     }
-    void set_input_address_1(std::string city_name, std::string streat_name, int bld_number, int flat_number)
+
+    void setCityName(std::string input_city_name)
     {
-        this->city_name = city_name;
-        this->streat_name = streat_name;
-        this->bld_number = bld_number;
-        this->flat_number = flat_number;
+        city_name = input_city_name;
     }
-    void set_input_address_2(std::string city_name, std::string streat_name, int bld_number, int flat_number)
+
+    void setStreatName(std::string input_streat_name)
     {
-        this->city_name = city_name;
-        this->streat_name = streat_name;
-        this->bld_number = bld_number;
-        this->flat_number = flat_number;
+        streat_name = input_streat_name;
     }
-    void set_input_address_3(std::string city_name, std::string streat_name, int bld_number, int flat_number)
+    void setBldName(int input_bld_number)
     {
-        this->city_name = city_name;
-        this->streat_name = streat_name;
-        this->bld_number = bld_number;
-        this->flat_number = flat_number;
+        bld_number = input_bld_number;
     }
-    void set_input_address_4(std::string city_name, std::string streat_name, int bld_number, int flat_number)
+    void setFltName(int input_flt_number)
     {
-        this->city_name = city_name;
-        this->streat_name = streat_name;
-        this->bld_number = bld_number;
-        this->flat_number = flat_number;
+        flat_number = input_flt_number;
     }
+
     std::string get_input_address()
     {
         return combine_of_data = city_name + ", " + streat_name + ", " + std::to_string(bld_number) + ", " + std::to_string(flat_number);
@@ -57,50 +48,18 @@ public:
     {
         return city_name;
     }
-    std::string get_streat_name()
-    {
-        return streat_name;
-    }
 };
 
 void sorting(Address* array_address, int number_of_adrs) {
     std::string city_name1;
     std::string city_name2;
-    std::string streat_name1;
-    std::string streat_name2;
-    //int result;
     bool swapped;
     do {
         swapped = false;
-        for (int i = 1; i < number_of_adrs; i++)
-        {
+        for (int i = 1; i < number_of_adrs; i++) {
             city_name1 = array_address[i - 1].get_city_name(); //Москва
             city_name2 = array_address[i].get_city_name(); //Новокузнецк
-            //result = city_name1.compare(city_name2);
-            if (city_name1 < city_name2)
-            {
-                //array_address[i - 1];
-                swapped = true;
-            }
-            else if (city_name1 == city_name2)
-            {
-                streat_name1 = array_address[i - 1].get_streat_name();
-                streat_name2 = array_address[i].get_streat_name();
-                //result = streat_name1.compare(streat_name2);
-                if (streat_name1 < streat_name2)
-                {
-                    //array_address[i - 1];
-                    swapped = true;
-                }
-                else
-                {
-                    Address temp_array_address = array_address[i - 1];
-                    array_address[i - 1] = array_address[i];
-                    array_address[i] = temp_array_address;
-                    swapped = true;
-                }
-            }
-            else
+            if (city_name1 > city_name2)
             {
                 Address temp_array_address = array_address[i - 1];
                 array_address[i - 1] = array_address[i];
@@ -132,39 +91,21 @@ int main(int argc, char** argv)
     }
     fin >> number_of_adrs;
     Address* array_address = new Address[number_of_adrs];
+
     for (int i = 0; i < number_of_adrs; i++) {
-        fin >> city_name >> streat_name >> bld_number >> flat_number;
-        //array_address[i].set_input_address_(city_name, streat_name, bld_number, flat_number);
-        switch (i)
-        {
-        case 0:
-            array_address[i].set_input_address_0(city_name, streat_name, bld_number, flat_number);
-            break;
-        case 1:
-            array_address[i].set_input_address_1(city_name, streat_name, bld_number, flat_number);
-            break;
-        case 2:
-            array_address[i].set_input_address_2(city_name, streat_name, bld_number, flat_number);
-            break;
-        case 3:
-            array_address[i].set_input_address_3(city_name, streat_name, bld_number, flat_number);
-            break;
-        case 4:
-            array_address[i].set_input_address_4(city_name, streat_name, bld_number, flat_number);
-            break;
-        default:
-            break;
-        }
+        fin >> city_name;
+        array_address[i].setCityName(city_name);
+        fin >> streat_name;
+        array_address[i].setStreatName(streat_name);
+        fin >> bld_number;
+        array_address[i].setBldName(bld_number);
+        fin >> flat_number;
+        array_address[i].setFltName(flat_number);
     }
     fout << number_of_adrs << std::endl;
-    for (int i = 0; i < number_of_adrs; i++)
-    {
-        combine_of_data = array_address[i].get_input_address();
-        fout << combine_of_data << std::endl;
-    }
     sorting(array_address, number_of_adrs);
-    for (int i = 0; i < number_of_adrs; i++)
-    {
+
+    for (int i = 0; i < number_of_adrs; i++) {
         combine_of_data = array_address[i].get_input_address();
         fout << combine_of_data << std::endl;
     }
