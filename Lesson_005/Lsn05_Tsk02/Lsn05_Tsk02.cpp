@@ -2,7 +2,18 @@
 #include "string"
 #include <windows.h>
 
-class Triangle
+class Figure
+{
+protected:
+    std::string name;
+    std::string sides_name = "Стороны";
+    std::string angles_name = "Углы";
+public:
+    Figure() {}
+    virtual void PrintInfo() {}
+};
+
+class Triangle : public Figure
 {
 protected:
     int side_length_a;
@@ -11,9 +22,6 @@ protected:
     int angle_value_A;
     int angle_value_B;
     int angle_value_C;
-    std::string name;
-    std::string sides_name = "Стороны";
-    std::string angles_name = "Углы";
 public:
     Triangle()
     {
@@ -24,14 +32,25 @@ public:
         this->angle_value_B = 60;
         this->angle_value_C = 70;
     }
-    void PrintInfo(std::string name)
-    {
+    void print_info(Triangle* triangle1) {
+        PrintInfo();
+    }
+    void PrintInfo() override {
+        name = GetName();
         std::cout << name << std::endl;
         std::cout << sides_name << ": " << "a=" << side_length_a << " " << "b=";
         std::cout << side_length_b << " " << "c=" << side_length_c << std::endl;
         std::cout << angles_name << ": " << "A=" << angle_value_A << " " << "B=";
         std::cout << angle_value_B << " " << "C=" << angle_value_C << "\n" << std::endl;
     }
+
+    std::string GetName()
+    {
+        this->name = "Треугольник:";
+        return name;
+    }
+
+
 };
 
 class RightTriangle : public Triangle {
@@ -64,7 +83,7 @@ public:
     }
 };
 
-class Quadrangle
+class Quadrangle : public Figure
 {
 protected:
     int side_length_a;
@@ -76,8 +95,8 @@ protected:
     int angle_value_C;
     int angle_value_D;
     std::string name;
-    std::string sides_name = "Стороны";
-    std::string angles_name = "Углы";
+    std::string sides_name = "???????";
+    std::string angles_name = "????";
 public:
     Quadrangle()
     {
@@ -155,15 +174,18 @@ int main(int argc, char** argv)
 {
     setlocale(LC_ALL, "Russian");
     SetConsoleCP(1251); SetConsoleOutputCP(1251);
-    Triangle().PrintInfo("Треугольник:");
-    RightTriangle().PrintInfo("Прямоугольный треугольник:");
-    IsoscelesTriangle().PrintInfo("Равнобедренный треугольник:");
-    EquilateralTriangle().PrintInfo("Равносторонний треугольник:");
-    Quadrangle().PrintInfo("Четырёхугольник:");
-    RectangleF().PrintInfo("Прямоугольник:");
-    Square().PrintInfo("Квадрат:");
-    Parallelogram().PrintInfo("Параллелограмм:");
-    Romb().PrintInfo("Ромб:");
+    Triangle triangle1;
+    print_info(&triangle1);
+
+    //    Triangle().PrintInfo("???????????:");
+    //    RightTriangle().PrintInfo("????????????? ???????????:");
+    //    IsoscelesTriangle().PrintInfo("?????????????? ???????????:");
+    //    EquilateralTriangle().PrintInfo("?????????????? ???????????:");
+    //    Quadrangle().PrintInfo("???????????????:");
+    //    RectangleF().PrintInfo("?????????????:");
+    //    Square().PrintInfo("???????:");
+    //    Parallelogram().PrintInfo("??????????????:");
+    //    Romb().PrintInfo("????:");
     Sleep(100000);
-    return 0;
+    return 0;
 }
