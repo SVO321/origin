@@ -5,8 +5,8 @@
 class Figure
 {
 protected:
-    std::string sides_name = "Стороны";
-    std::string angles_name = "Углы";
+    std::string sides_name = "Стороны\t";
+    std::string angles_name = "Углы\t";
     std::string name;
 public:
     virtual void PrintInfo() {}
@@ -23,15 +23,12 @@ protected:
     int angle_value_C;
     std::string name;
 public:
-    Triangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A, int in_angle_value_B, int in_angle_value_C)
-        : side_length_a(in_side_length_a),
-        side_length_b(in_side_length_b),
-        side_length_c(in_side_length_c),
-        angle_value_A(in_angle_value_A),
-        angle_value_B(in_angle_value_B),
-        angle_value_C(in_angle_value_C)
+    Triangle(int in_side_length_a, int in_side_length_b, int in_side_length_c,
+        int in_angle_value_A, int in_angle_value_B, int in_angle_value_C)
     {
-        name = "Треугольник";
+        side_length_a = in_side_length_a, side_length_b = in_side_length_b, side_length_c = in_side_length_c,
+            angle_value_A = in_angle_value_A, angle_value_B = in_angle_value_B, angle_value_C = in_angle_value_C;
+        name = "Фигура";
     }
     Triangle()
     {
@@ -63,16 +60,13 @@ public:
         this->angle_value_C = 90;
     }
 public:
-    //    RightTriangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A, int in_angle_value_B, int in_angle_value_C)
-    //            : side_length_a(in_side_length_a),
-    //              side_length_b(in_side_length_b),
-    //              side_length_c(in_side_length_c),
-    //              angle_value_A(in_angle_value_A),
-    //              angle_value_B(in_angle_value_B),
-    //              angle_value_C(in_angle_value_C)
-    //    {
-    //        name = "Прямоугольный треугольник";
-    //    }
+    RightTriangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A,
+        int in_angle_value_B, int in_angle_value_C)
+        : Triangle(in_side_length_a, in_side_length_b, in_side_length_c, in_angle_value_A,
+            in_angle_value_B, in_angle_value_C)
+    {
+        name = "Прямоугольный треугольник";
+    }
     void PrintInfo() override {
         name = GetName();
         std::cout << name << std::endl;
@@ -96,16 +90,13 @@ public:
         this->angle_value_C = 50;
     }
 public:
-    //    RightTriangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A, int in_angle_value_B, int in_angle_value_C)
-    //            : side_length_a(in_side_length_a),
-    //              side_length_b(in_side_length_b),
-    //              side_length_c(in_side_length_c),
-    //              angle_value_A(in_angle_value_A),
-    //              angle_value_B(in_angle_value_B),
-    //              angle_value_C(in_angle_value_C)
-    //    {
-    //        name = "Равнобедренный треугольник";
-    //    }
+    IsoscelesTriangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A,
+        int in_angle_value_B, int in_angle_value_C)
+        : Triangle(in_side_length_a, in_side_length_b, in_side_length_c, in_angle_value_A,
+            in_angle_value_B, in_angle_value_C)
+    {
+        name = "Равнобедренный треугольник";
+    }
     void PrintInfo() override {
         name = GetName();
         std::cout << name << std::endl;
@@ -132,16 +123,13 @@ public:
 
     }
 public:
-    //    RightTriangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A, int in_angle_value_B, int in_angle_value_C)
-    //            : side_length_a(in_side_length_a),
-    //              side_length_b(in_side_length_b),
-    //              side_length_c(in_side_length_c),
-    //              angle_value_A(in_angle_value_A),
-    //              angle_value_B(in_angle_value_B),
-    //              angle_value_C(in_angle_value_C)
-    //    {
-    //        name = "Равносторонний треугольник";
-    //    }
+    EquilateralTriangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A,
+        int in_angle_value_B, int in_angle_value_C)
+        : Triangle(in_side_length_a, in_side_length_b, in_side_length_c, in_angle_value_A,
+            in_angle_value_B, in_angle_value_C)
+    {
+        name = "Равносторонний треугольник";
+    }
     void PrintInfo() override {
         name = GetName();
         std::cout << name << std::endl;
@@ -169,13 +157,16 @@ protected:
     int angle_value_D;
     std::string name;
 public:
-    Quadrangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A, int in_angle_value_B, int in_angle_value_C)
+    Quadrangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_side_length_d,
+        int in_angle_value_A, int in_angle_value_B, int in_angle_value_C, int in_angle_value_D)
         : side_length_a(in_side_length_a),
         side_length_b(in_side_length_b),
         side_length_c(in_side_length_c),
+        side_length_d(in_side_length_d),
         angle_value_A(in_angle_value_A),
         angle_value_B(in_angle_value_B),
-        angle_value_C(in_angle_value_C)
+        angle_value_C(in_angle_value_C),
+        angle_value_D(in_angle_value_D)
     {
         name = "Четырехугольник";
     }
@@ -207,16 +198,13 @@ public:
 class Parallelogram : public Quadrangle
 {
 public:
-    //    Parallelogram(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A, int in_angle_value_B, int in_angle_value_C)
-    //            : side_length_a(in_side_length_a),
-    //              side_length_b(in_side_length_b),
-    //              side_length_c(in_side_length_c),
-    //              angle_value_A(in_angle_value_A),
-    //              angle_value_B(in_angle_value_B),
-    //              angle_value_C(in_angle_value_C)
-    //    {
-    //        name = "Параллелограмм";
-    //    }
+    Parallelogram(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_side_length_d,
+        int in_angle_value_A, int in_angle_value_B, int in_angle_value_C, int in_angle_value_D)
+        : Quadrangle(in_side_length_a, in_side_length_b, in_side_length_c, in_side_length_d,
+            in_angle_value_A, in_angle_value_B, in_angle_value_C, in_angle_value_D)
+    {
+        name = "Параллелограмм";
+    }
     Parallelogram()
     {
         this->side_length_a = 20;
@@ -245,16 +233,13 @@ public:
 class RectangleF : public Quadrangle
 {
 public:
-    //    RectangleF(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A, int in_angle_value_B, int in_angle_value_C)
-//            : side_length_a(in_side_length_a),
-//              side_length_b(in_side_length_b),
-//              side_length_c(in_side_length_c),
-//              angle_value_A(in_angle_value_A),
-//              angle_value_B(in_angle_value_B),
-//              angle_value_C(in_angle_value_C)
-//    {
-//        name = "Прямоугольник";
-//    }
+    RectangleF(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_side_length_d,
+        int in_angle_value_A, int in_angle_value_B, int in_angle_value_C, int in_angle_value_D)
+        : Quadrangle(in_side_length_a, in_side_length_b, in_side_length_c, in_side_length_d,
+            in_angle_value_A, in_angle_value_B, in_angle_value_C, in_angle_value_D)
+    {
+        name = "Прямоугольник";
+    }
     RectangleF()
     {
         this->side_length_c = 10;
@@ -281,16 +266,13 @@ public:
 class Romb : public Parallelogram
 {
 public:
-    //    Romb(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A, int in_angle_value_B, int in_angle_value_C)
-//            : side_length_a(in_side_length_a),
-//              side_length_b(in_side_length_b),
-//              side_length_c(in_side_length_c),
-//              angle_value_A(in_angle_value_A),
-//              angle_value_B(in_angle_value_B),
-//              angle_value_C(in_angle_value_C)
-//    {
-//        name = "Ромб";
-//    }
+    Romb(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_side_length_d,
+        int in_angle_value_A, int in_angle_value_B, int in_angle_value_C, int in_angle_value_D)
+        : Parallelogram(in_side_length_a, in_side_length_b, in_side_length_c, in_side_length_d,
+            in_angle_value_A, in_angle_value_B, in_angle_value_C, in_angle_value_D)
+    {
+        name = "Ромб";
+    }
     Romb()
     {
         this->side_length_a = 30;
@@ -313,16 +295,13 @@ public:
 class Square : public RectangleF
 {
 public:
-    //    Square(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_angle_value_A, int in_angle_value_B, int in_angle_value_C)
-//            : side_length_a(in_side_length_a),
-//              side_length_b(in_side_length_b),
-//              side_length_c(in_side_length_c),
-//              angle_value_A(in_angle_value_A),
-//              angle_value_B(in_angle_value_B),
-//              angle_value_C(in_angle_value_C)
-//    {
-//        name = "Квадрат";
-//    }
+    Square(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_side_length_d,
+        int in_angle_value_A, int in_angle_value_B, int in_angle_value_C, int in_angle_value_D)
+        : RectangleF(in_side_length_a, in_side_length_b, in_side_length_c, in_side_length_d,
+            in_angle_value_A, in_angle_value_B, in_angle_value_C, in_angle_value_D)
+    {
+        name = "Квадрат";
+    }
     Square()
     {
         this->side_length_a = 20;
