@@ -1,0 +1,13 @@
+# ninja log v5
+1	3889	7222600473279651	CMakeFiles/untitled30.dir/Figure.cpp.obj	4b8e96b1ce49b8fb
+32	3905	7222600473279651	CMakeFiles/untitled30.dir/EquilateralTriangle.cpp.obj	459bb28ec367b18b
+17	3939	7222600473380587	CMakeFiles/untitled30.dir/main.cpp.obj	da2025facc71cfa
+9	3921	7222600473310121	CMakeFiles/untitled30.dir/Triangle.cpp.obj	f2beec001c7f36c3
+44	3913	7222600473279651	CMakeFiles/untitled30.dir/Quadrangle.cpp.obj	792fdba5e5fa5434
+3921	6958	7222600504004226	CMakeFiles/untitled30.dir/Square.cpp.obj	d4038fff98a0f6c4
+24	3930	7222600473340043	CMakeFiles/untitled30.dir/IsoscelesTriangle.cpp.obj	71ff85f83e43c721
+3914	6888	7222600503300217	CMakeFiles/untitled30.dir/RectangleF.cpp.obj	5564c32f00ed28c0
+3896	6968	7222600504103958	CMakeFiles/untitled30.dir/RightTriangle.cpp.obj	7c26836af2e12db1
+3930	7069	7222600505119770	CMakeFiles/untitled30.dir/Parallelogram.cpp.obj	9cb152619ab31e16
+3905	6974	7222600504163945	CMakeFiles/untitled30.dir/Romb.cpp.obj	20925d13a09f690
+7069	7391	7222600508281975	untitled30.exe	2386771c80758193
