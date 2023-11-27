@@ -11,6 +11,7 @@
 #include "rectanglef.h"
 #include "romb.h"
 #include "square.h"
+#include "domain_error.h"
 
 void print_info(Figure* figure)
 {

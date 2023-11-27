@@ -1,9 +1,7 @@
 # ninja log v5
-6	611	7216756674948210	CMakeFiles/untitled24.dir/Calculator.cpp.obj	35a706d869f82743
-4	1916	7216757177880722	CMakeFiles/untitled24.dir/main.cpp.obj	3b0853ebd3cbefd2
-1919	2055	7216757179195274	untitled24.exe	4c1f919f9e7c4ad2
 11	2227	7216760374064802	CMakeFiles/untitled24.dir/Calculator.cpp.obj	35a706d869f82743
-5	2271	7216760374495762	CMakeFiles/untitled24.dir/main.cpp.obj	3b0853ebd3cbefd2
-2271	2391	7216760375624906	untitled24.exe	4c1f919f9e7c4ad2
 3	1814	7216761443390888	CMakeFiles/untitled24.dir/main.cpp.obj	3b0853ebd3cbefd2
 1815	1935	7216761444546678	untitled24.exe	4c1f919f9e7c4ad2
+8	483	7227854562646719	CMakeFiles/untitled24.dir/Calculator.cpp.obj	4c58fa647343fa9c
+1	1923	7227854577039957	CMakeFiles/untitled24.dir/main.cpp.obj	5623d184c37d6c84
+1925	2088	7227854578660322	untitled24.exe	39c88888784a59b9

@@ -1,4 +1,16 @@
-"D:\CLion 2023.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/CLion 2023.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\vasil\CLionProjects\untitled24 -B C:\Users\vasil\CLionProjects\untitled24\cmake-build-debug
--- Configuring done (0.1s)
+"C:\Program Files\JetBrains\CLion 2023.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\Vasily Soldatov\Desktop\CPP_Projects\Origin\Lesson_006\Lsn06_Tsk02\untitled24" -B "C:\Users\Vasily Soldatov\Desktop\CPP_Projects\Origin\Lesson_006\Lsn06_Tsk02\untitled24\cmake-build-debug"
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.5s)
 -- Generating done (0.0s)
--- Build files have been written to: C:/Users/vasil/CLionProjects/untitled24/cmake-build-debug
+-- Build files have been written to: C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_006/Lsn06_Tsk02/untitled24/cmake-build-debug
