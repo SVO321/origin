@@ -11,7 +11,6 @@ class Figure
 protected:
     std::string sides_name = "Стороны\t";
     std::string angles_name = "Углы\t";
-    std::string name;
 public:
     virtual void PrintInfo();
     virtual void Print();
