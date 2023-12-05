@@ -14,10 +14,6 @@ public:
         numerator_ = numerator;
         denominator_ = denominator;
     }
-//    bool operator== (const Fraction& fraction) const
-//    {
-//        return value == fraction.value;
-//    }
     [[nodiscard]] double Abs() const {
         return std::sqrt(numerator_ * numerator_ + denominator_ * denominator_);
     }
@@ -27,11 +23,11 @@ public:
     bool operator!=(Fraction other) const {
         return !(*this == other);
     }
-    bool operator>(Fraction other) const {
-        return Abs() > other.Abs();
-    }
     bool operator<(Fraction other) const {
-        return other > *this;
+        return  (numerator_ * other.denominator_) < (denominator_ * other.numerator_);
+    }
+    bool operator>(Fraction other) const {
+        return  (numerator_ * other.denominator_) > (denominator_ * other.numerator_);
     }
     bool operator<=(Fraction other) const {
         return !(*this > other);
@@ -55,5 +51,6 @@ int main()
     std::cout << "f1" << ((f1 > f2) ? " > " : " not > ") << "f2" << '\n';
     std::cout << "f1" << ((f1 <= f2) ? " <= " : " not <= ") << "f2" << '\n';
     std::cout << "f1" << ((f1 >= f2) ? " >= " : " not >= ") << "f2" << '\n';
+    Sleep(100000);
     return 0;
 }

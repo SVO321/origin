@@ -20,6 +20,7 @@ public:
     Fraction operator-(Fraction other) const {
         return { ((numerator_ * other.denominator_) - (other.numerator_ * denominator_)), denominator_ * other.denominator_ };
     }
+
     Fraction operator*(Fraction other) const {
         if (numerator_ == other.denominator_) {
             return { denominator_, other.numerator_ };
@@ -43,17 +44,17 @@ public:
         }
     }
     Fraction& operator++() {
-        numerator_++;
-        denominator_++;
+        numerator_ = numerator_ + denominator_;
         return *this;
     }
-    Fraction operator--(int)
-    {
+
+    Fraction operator--(int) {
         Fraction temp = *this;
-        --(*this);
+        //--(*this);
+        numerator_ = numerator_ - denominator_;
         return temp;
     }
-void Print() const
+    void Print() const
     {
         std::cout << numerator_ << "/" << denominator_ << std::endl;
     }
@@ -100,13 +101,18 @@ int main()
     DIV_f1_f3.Print();
 
     Fraction PRE_f1_f2 = (++f1 * f2);
-    std::cout << "++" << input_numerator1 << "/" << input_denominator1 << " * " << input_numerator2 << "/" << input_denominator2 << " = "; // как надо не работает
+    std::cout << "++" << input_numerator1 << "/" << input_denominator1 << " * " << input_numerator2 << "/" << input_denominator2 << " = "; // ??? ???? ?? ????????
     PRE_f1_f2.Print();
-
-    Fraction POS_f1_f2 = (f1-- * f2);
-    std::cout << input_numerator1 << "/" << input_denominator1 << "--" << " * " << input_numerator2 << "/" << input_denominator2 << " = "; //вообще не работает
+    std::cout << "Значение дроби 1 = 7/4" << std::endl;
+    input_numerator1 = 7, input_denominator1 = 4;
+    Fraction f4(input_numerator1, input_denominator1);
+    Fraction POS_f1_f2 = (f4-- * f2);
+    std::cout << input_numerator1 << "/" << input_denominator1 << "--" << " * " << input_numerator2 << "/" << input_denominator2 << " = "; //?????? ?? ????????
     POS_f1_f2.Print();
+    std::cout << "Значение дроби 1 = 3/4" << std::endl;
+    input_numerator1 = 3, input_denominator1 = 4;
+    //Fraction f5(input_numerator1, input_denominator1);
 
-    Sleep(10000);
+    Sleep(100000);
     return 0;
 }
