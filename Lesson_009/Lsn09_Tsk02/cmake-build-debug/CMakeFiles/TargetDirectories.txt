@@ -1,0 +1,3 @@
+C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_009/Lsn09_Tsk02/cmake-build-debug/CMakeFiles/Lsn09_Tsk02.dir
+C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_009/Lsn09_Tsk02/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_009/Lsn09_Tsk02/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,13 @@
+# ninja log v5
+10	2870	7233086299005575	CMakeFiles/Lsn010_Tsk02.dir/main.cpp.obj	c04e51483c4e69cf
+16	2963	7233086299935774	CMakeFiles/Lsn010_Tsk02.dir/Triangle.cpp.obj	6ce007888ce4de29
+40	2969	7233086299985778	CMakeFiles/Lsn010_Tsk02.dir/Quadrangle.cpp.obj	ab100b1d9730682a
+77	2976	7233086300065810	CMakeFiles/Lsn010_Tsk02.dir/Romb.cpp.obj	98debccd3f07da66
+1	2990	7233086300215850	CMakeFiles/Lsn010_Tsk02.dir/Figure.cpp.obj	3856b40303c955b1
+58	3016	7233086300485883	CMakeFiles/Lsn010_Tsk02.dir/Parallelogram.cpp.obj	830ea543dfb0ec45
+66	3023	7233086300545898	CMakeFiles/Lsn010_Tsk02.dir/RectangleF.cpp.obj	79b51e2600282dba
+32	3071	7233086301026009	CMakeFiles/Lsn010_Tsk02.dir/RightTriangle.cpp.obj	f1ef8480ede2aa8d
+87	3083	7233086301156041	CMakeFiles/Lsn010_Tsk02.dir/Square.cpp.obj	f4639792a7d055d
+23	3086	7233086301176044	CMakeFiles/Lsn010_Tsk02.dir/IsoscelesTriangle.cpp.obj	3fae0b76bb2c4d8e
+48	3133	7233086301656149	CMakeFiles/Lsn010_Tsk02.dir/EquilateralTriangle.cpp.obj	d881b37f098cdb4b
+3133	3308	7233086303376533	Lsn010_Tsk02.exe	4ae2094474d31c4f

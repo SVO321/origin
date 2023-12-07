@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="untitled30"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled30">
+				<Option output="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/untitled30.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled30"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled30/fast">
+				<Option output="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/untitled30.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled30/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Domain_Error.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Domain_Error.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/EquilateralTriangle.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/EquilateralTriangle.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Figure.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Figure.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/IsoscelesTriangle.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/IsoscelesTriangle.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Parallelogram.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Parallelogram.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Quadrangle.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Quadrangle.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/RectangleF.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/RectangleF.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/RightTriangle.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/RightTriangle.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Romb.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Romb.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Square.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Square.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Triangle.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/Triangle.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/domain_error.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/equilateraltriangle.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/figure.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/isoscelestriangle.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/main.cpp">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/parallelogram.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/quadrangle.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/rectanglef.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/righttriangle.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/romb.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/square.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/triangle.h">
+			<Option target="untitled30"/>
+		</Unit>
+		<Unit filename="C:/Users/Vasily Soldatov/Desktop/CPP_Projects/Origin/Lesson_008/Lsn08_Tsk02/untitled30/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

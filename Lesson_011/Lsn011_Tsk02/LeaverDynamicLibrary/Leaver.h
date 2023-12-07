@@ -1,0 +1,17 @@
+#pragma once
+#include <string>
+#pragma warning(suppress : 6387)
+
+#ifdef LEAVERDYNAMICLIBRARY_EXPORTS
+#define LEAVERDYNAMICLIBRARY_API __declspec(dllexport)
+#else
+#define LEAVERDYNAMICLIBRARY_API __declspec(dllimport)
+#endif
+
+class Leaver
+{
+private:
+	std::string input_name;
+public:
+	LEAVERDYNAMICLIBRARY_API void Leave(std::string input_name);
+};

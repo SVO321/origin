@@ -1,0 +1,19 @@
+﻿#include <iostream>
+#include "string"
+#include <windows.h>
+#include "rectanglef.h"
+#pragma once
+#ifdef CLASSDYNAMICLIBRARY_EXPORTS
+#define CLASSLIBRARY_API __declspec(dllexport)
+#else
+#define CLASSLIBRARY_API __declspec(dllimport)
+#endif
+class Square : public RectangleF
+{
+public:
+    __declspec(dllexport) Square(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_side_length_d,
+        int in_angle_value_A, int in_angle_value_B, int in_angle_value_C, int in_angle_value_D);
+    __declspec(dllexport) Square();
+    __declspec(dllexport) void PrintInfo() override;
+    __declspec(dllexport) std::string GetName();
+};

@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LeaverCMake",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LeaverCMake::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeaverCMake-Debug-8d643ad72f3fa1786214.json",
+					"name" : "LeaverCMake",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LeaverDynamicLibrary::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeaverDynamicLibrary-Debug-bafd39eb7f99dd78d26f.json",
+					"name" : "LeaverDynamicLibrary",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/vasil/source/repos/Lesson011/Lsn011_Tsk03/out/build/x64-Debug",
+		"source" : "C:/Users/vasil/source/repos/Lesson011/Lsn011_Tsk03"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

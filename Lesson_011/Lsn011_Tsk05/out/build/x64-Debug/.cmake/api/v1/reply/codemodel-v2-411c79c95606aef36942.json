@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ClassHierarchyCMake",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ClassDynamicLibrary::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ClassDynamicLibrary-Debug-a8d922ec9e7ce024167a.json",
+					"name" : "ClassDynamicLibrary",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ClassHierarchyCMake::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ClassHierarchyCMake-Debug-86ea63a6e0a0c1cc697b.json",
+					"name" : "ClassHierarchyCMake",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/vasil/source/repos/Lesson011/Lsn011_Tsk05/out/build/x64-Debug",
+		"source" : "C:/Users/vasil/source/repos/Lesson011/Lsn011_Tsk05"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
