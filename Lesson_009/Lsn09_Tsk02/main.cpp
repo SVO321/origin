@@ -47,22 +47,34 @@ public:
         numerator_ = numerator_ + denominator_;
         return *this;
     }
-
+    Fraction operator++(int) {
+        Fraction temp = *this;
+        ++(*this);
+        return temp;
+    }
+    Fraction& operator--() {
+        numerator_ = numerator_ - denominator_;
+        return *this;
+    }
     Fraction operator--(int) {
         Fraction temp = *this;
-        //--(*this);
-        numerator_ = numerator_ - denominator_;
+        --(*this);
         return temp;
     }
     void Print() const
     {
-        std::cout << numerator_ << "/" << denominator_ << std::endl;
+        std::cout << numerator_ << "/" << denominator_;
+    }
+
+    void PrintValue() const
+    {
+        std::cout << "Значение дроби 1 = " << numerator_ << "/" << denominator_  << std::endl;
     }
 };
 
-void PrintFirst(int input_numerator1, int input_denominator1, int input_numerator2, int input_denominator2)
+void PrintFirst(int input_numerator1, int input_denominator1, int input_numerator2, int input_denominator2, const std::string& symbol)
 {
-    std::cout << input_numerator1 << "/" << input_denominator1 << " - " << input_numerator2 << "/" << input_denominator2 << " = ";
+    std::cout << input_numerator1 << "/" << input_denominator1 << symbol << input_numerator2 << "/" << input_denominator2 << " = ";
 }
 
 int main()
@@ -71,6 +83,7 @@ int main()
     SetConsoleCP(1251); SetConsoleOutputCP(1251);
     int input_numerator1, input_denominator1;
     int input_numerator2, input_denominator2;
+    std::string symbol;
 
     std::cout << "Введите числитель дроби 1: ";
     std::cin >> input_numerator1;
@@ -85,33 +98,57 @@ int main()
     Fraction f3(input_denominator2, input_numerator2);
 
     Fraction SUM_f1_f2 = (f1 + f2);
-    PrintFirst(input_numerator1, input_denominator1, input_numerator2, input_denominator2);
+    symbol = " + ";
+    PrintFirst(input_numerator1, input_denominator1, input_numerator2, input_denominator2, symbol);
     SUM_f1_f2.Print();
+    std::cout << std::endl;
 
     Fraction SUB_f1_f2 = (f1 - f2);
-    PrintFirst(input_numerator1, input_denominator1, input_numerator2, input_denominator2);
+    symbol = " - ";
+    PrintFirst(input_numerator1, input_denominator1, input_numerator2, input_denominator2, symbol);
     SUB_f1_f2.Print();
+    std::cout << std::endl;
 
     Fraction MUL_f1_f2 = (f1 * f2);
-    PrintFirst(input_numerator1, input_denominator1, input_numerator2, input_denominator2);
+    symbol = " * ";
+    PrintFirst(input_numerator1, input_denominator1, input_numerator2, input_denominator2, symbol);
     MUL_f1_f2.Print();
+    std::cout << std::endl;
 
     Fraction DIV_f1_f3 = (f1 / f3);
-    PrintFirst(input_numerator1, input_denominator1, input_numerator2, input_denominator2);
+    symbol = " / ";
+    PrintFirst(input_numerator1, input_denominator1, input_numerator2, input_denominator2, symbol);
     DIV_f1_f3.Print();
+    std::cout << std::endl;
 
-    Fraction PRE_f1_f2 = (++f1 * f2);
-    std::cout << "++" << input_numerator1 << "/" << input_denominator1 << " * " << input_numerator2 << "/" << input_denominator2 << " = "; // ??? ???? ?? ????????
-    PRE_f1_f2.Print();
-    std::cout << "Значение дроби 1 = 7/4" << std::endl;
-    input_numerator1 = 7, input_denominator1 = 4;
-    Fraction f4(input_numerator1, input_denominator1);
-    Fraction POS_f1_f2 = (f4-- * f2);
-    std::cout << input_numerator1 << "/" << input_denominator1 << "--" << " * " << input_numerator2 << "/" << input_denominator2 << " = "; //?????? ?? ????????
-    POS_f1_f2.Print();
-    std::cout << "Значение дроби 1 = 3/4" << std::endl;
-    input_numerator1 = 3, input_denominator1 = 4;
-    //Fraction f5(input_numerator1, input_denominator1);
+    Fraction PREPLUS_f1 = ++f1;
+    Fraction PREPLUS_f1_f2 = (f1 * f2);
+    symbol = " * ";
+    std::cout << "++";
+    PrintFirst(input_numerator1, input_denominator1, input_numerator2, input_denominator2, symbol);
+    PREPLUS_f1_f2.Print();
+    std::cout << std::endl;
+    PREPLUS_f1.PrintValue();
+
+    Fraction POSPLUS_f1_f2 = (f1++ * f2);
+    PREPLUS_f1.Print();
+    std::cout <<  "++" << " * " << input_numerator2 << "/" << input_denominator2 << " = ";
+    POSPLUS_f1_f2.Print();
+    std::cout << std::endl;
+
+    PREPLUS_f1.Print();
+    Fraction POSDIV_f1_f2 = (PREPLUS_f1-- * f2);
+    std::cout << "--" << " * " << input_numerator2 << "/" << input_denominator2 << " = ";
+    POSDIV_f1_f2.Print();
+    std::cout << std::endl;
+    PREPLUS_f1.PrintValue();
+
+    std::cout << "--";
+    PREPLUS_f1.Print();
+    Fraction PREDIV_f1_f2 = (--PREPLUS_f1 * f2);
+    std::cout << " * " << input_numerator2 << "/" << input_denominator2 << " = ";
+    PREDIV_f1_f2.Print();
+    std::cout << std::endl;
 
     Sleep(100000);
     return 0;
