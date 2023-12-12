@@ -16,5 +16,5 @@ protected:
     std::string angles_name = "Углы\t";
     std::string name;
 public:
-    __declspec(dllexport) virtual void PrintInfo();
+    CLASSLIBRARY_API virtual void PrintInfo();
 };

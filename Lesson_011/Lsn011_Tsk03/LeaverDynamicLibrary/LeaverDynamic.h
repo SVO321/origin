@@ -12,5 +12,5 @@ class Leaver
 private:
 	std::string input_name;
 public:
-	__declspec(dllexport) void Leave(std::string input_name);
+	LEAVERDYNAMICLIBRARY_API void Leave(std::string input_name);
 };

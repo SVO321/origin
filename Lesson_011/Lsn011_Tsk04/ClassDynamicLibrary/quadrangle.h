@@ -2,12 +2,7 @@
 #include "string"
 #include <windows.h>
 #include "figure.h"
-#pragma once
-#ifdef CLASSDYNAMICLIBRARY_EXPORTS
-#define CLASSLIBRARY_API __declspec(dllexport)
-#else
-#define CLASSLIBRARY_API __declspec(dllimport)
-#endif
+
 class Quadrangle : public Figure
 {
 protected:
@@ -21,9 +16,9 @@ protected:
     int angle_value_D;
     std::string name;
 public:
-    __declspec(dllexport) Quadrangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_side_length_d,
+    CLASSLIBRARY_API Quadrangle(int in_side_length_a, int in_side_length_b, int in_side_length_c, int in_side_length_d,
         int in_angle_value_A, int in_angle_value_B, int in_angle_value_C, int in_angle_value_D);
-    __declspec(dllexport) Quadrangle();
-    __declspec(dllexport) void PrintInfo() override;
-    __declspec(dllexport) std::string GetName();
+    CLASSLIBRARY_API Quadrangle();
+    CLASSLIBRARY_API void PrintInfo() override;
+    CLASSLIBRARY_API std::string GetName();
 };

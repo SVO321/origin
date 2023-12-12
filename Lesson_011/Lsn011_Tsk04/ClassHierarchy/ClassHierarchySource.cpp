@@ -10,6 +10,7 @@
 #include "rectanglef.h"
 #include "romb.h"
 #include "square.h"
+#include "locale.h"
 
 static void print_info(Figure* figure)
 {
@@ -47,6 +48,6 @@ int main(int argc, char** argv)
     Romb Romb1;
     print_info(&Romb1);
 
-    Sleep(5000);
+    Sleep(8000);
     return 0;
 }

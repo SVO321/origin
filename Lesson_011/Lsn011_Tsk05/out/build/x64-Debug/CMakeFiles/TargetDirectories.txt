@@ -1,4 +1,0 @@
-C:/Users/vasil/source/repos/Lesson011/Lsn011_Tsk05/out/build/x64-Debug/CMakeFiles/ClassDynamicLibrary.dir
-C:/Users/vasil/source/repos/Lesson011/Lsn011_Tsk05/out/build/x64-Debug/CMakeFiles/ClassHierarchyCMake.dir
-C:/Users/vasil/source/repos/Lesson011/Lsn011_Tsk05/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/vasil/source/repos/Lesson011/Lsn011_Tsk05/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
